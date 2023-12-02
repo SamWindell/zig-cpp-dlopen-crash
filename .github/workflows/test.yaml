@@ -14,10 +14,10 @@ jobs:
           version: 0.11.0
       - name: Test zig build c
         run: |
-          zig build run -Dexe_is_cpp=False
+          zig build run -Dexe_is_cpp=false
       - name: Test gcc build cpp
         run: |
           ./gcc_build.sh
       - name: Test zig build cpp
         run: |
-          zig build run -Dexe_is_cpp=True
+          zig build run -Dexe_is_cpp=true
